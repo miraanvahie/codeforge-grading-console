@@ -57,25 +57,4 @@ Each change starts from a problem an instructor actually has while grading.
 
 To test error handling, upload `test-data/edge_cases.xlsx`.
 
-## Deploying
 
-The app is a single HTML file, so any static host works.
-
-**Netlify Drop (fastest, no account needed to start):** go to https://app.netlify.com/drop and drag the project folder onto the page. You get a public URL straight away. Sign up to keep it permanently.
-
-**GitHub Pages:**
-1. Create a new public repository and upload the contents of this folder (keep `index.html` at the top level).
-2. In the repository, open Settings → Pages.
-3. Under "Build and deployment", choose "Deploy from a branch", branch `main`, folder `/ (root)`, and save.
-4. After about a minute the site is live at `https://<your-username>.github.io/<repo-name>/`.
-
-**Vercel:** import the GitHub repository at https://vercel.com/new, keep the framework preset as "Other", and deploy.
-
-After deploying, open the URL in a private window and run through "Try it quickly" once.
-
-## Technical notes
-
-- Plain HTML, CSS and JavaScript, no build step. [SheetJS](https://sheetjs.com) 0.18.5 (pinned) reads and writes Excel files.
-- The chart is SVG generated from the data, so it stays sharp at any size and each marker is a focusable slider.
-- Marks are rounded once on import; grading uses whole numbers only, which matches the grade bands.
-- Saved cutoffs and the instructor name use `localStorage`. If storage is unavailable (private mode) the app still works, it just does not remember between visits.

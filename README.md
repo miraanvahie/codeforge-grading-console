@@ -1,6 +1,6 @@
 # Grading Console – BITS Digital CodeForge V1.0
 
-**Live app:** _add your URL here after deploying_
+**Live app:** (https://miraanvahie.github.io/codeforge-grading-console/)
 
 A browser-based console for turning a marks spreadsheet into final letter grades. It started as the buggy prototype supplied for CodeForge; this repo contains the debugged version and a redesigned version built on top of it.
 

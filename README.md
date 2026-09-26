@@ -4,7 +4,7 @@
 
 A browser-based console for turning a marks spreadsheet into final letter grades. It started as the buggy prototype supplied for CodeForge; this repo contains the debugged version and a redesigned version built on top of it.
 
-![Grading console](docs/screenshot.png)
+
 
 ## What's in this repo
 
